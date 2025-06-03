@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to My Dad's Company</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Grant Homes Inc. - Custom home builders in Richmond Hill, Georgia. Building on tradition and your piece of the Southern coast." />
+  <title>Grant Homes Inc.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+    }
+    header {
+      background: url('https://your-hero-image.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1a1a1a;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background: #333;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .portfolio img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from Charles 😎</h1>
-  <p>Website coming soon!</p>
+  <header>
+    <h1>Grant Homes Inc.</h1>
+    <p>Building on TRADITION and Your Piece of the Southern Coast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Founded in 2001 by brothers Scott and Brian Grant, Grant Homes Inc. has become one of the premier custom home builders in the Richmond Hill area. We specialize in building high-end homes that reflect the charm of the Southern coast.</p>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Our Work</h2>
+    <p>Here are a few of our favorite custom homes.</p>
+    <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+    <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+    <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Interested in building your dream home? Let’s talk!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Grant Homes Inc. All rights reserved.</p>
+  </footer>
 </body>
 </html>
